@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "b90b9aa3-1c72-4aef-8c1a-7d1f4344f4a4",
+		"name": "node js",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24649650"
+	},
+	"item": [
+		{
+			"name": "college",
+			"item": [
+				{
+					"name": "admin",
+					"item": [
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"vino@gmail.com\",\r\n    \"password\":\"12345\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8800/dev/signin",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"dev",
+										"signin"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "department",
+					"item": [
+						{
+							"name": "getDepartment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8800/dev/getDepartment/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"dev",
+										"getDepartment",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Student",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8800/dev/getStudent/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"dev",
+										"getStudent",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pay fee",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":1,\r\n    \"paidFees\":18000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8800/dev/payFees",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"dev",
+										"payFees"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get student by department id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8800/dev/getStudentByDepartId/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"dev",
+										"getStudentByDepartId",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create student",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8800/dev/createStudent",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8800",
+									"path": [
+										"dev",
+										"createStudent"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
